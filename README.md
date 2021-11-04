@@ -1,1 +1,1 @@
-# site_doomgames criado para campeonato.
+# site-doom-games criado para campeonato.
