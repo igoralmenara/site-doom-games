@@ -14,8 +14,8 @@
     --font-small: 0.875em;
     --font-normal: 1em;
     --font-medium: 1.2em;
-    --font-large: 1.4em;
-    --font-max: 2em;
+    --font-large: 1.875em;
+    --font-max: 3em;
 
     --color-default: #555555;
     --color-green: #36BA9B;
@@ -43,6 +43,10 @@
     --radius-medium: 10px;
     --radius-large: 20px;
     --radius-round: 50%;
+
+    --area-small: 10px;
+    --area-normal: calc(var(--area-small) * 2);
+    --area-box: calc(var(--area-small) * 3);
 }
 
 /*DISPLAY*/
