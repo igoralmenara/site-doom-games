@@ -53,7 +53,7 @@
 /*MAIN HOME*/
 .main_home {
     width: 100%;
-    background-image: url("../_img/bd_main_home.jpg");
+    background-image: url("../img/bd_main_home.jpg");
     background-color: var(--color-dg-black);
     background-repeat: no-repeat;
     background-size: cover;
