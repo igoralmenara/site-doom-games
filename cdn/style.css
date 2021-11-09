@@ -34,7 +34,6 @@
     list-style: none;
     display: flex;
     align-items: center;
-
 }
 
 .main_header_content_menu ul li a {
@@ -42,7 +41,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    color: var(--color-dg-blue);
+    color: #fff;
     font-size: var(--font-medium);
 }
 
@@ -58,13 +57,13 @@
     background-color: var(--color-dg-black);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .main_home .main_home_content {
-    /*max-width: 1300px;*/
     margin: 0 auto;
-    padding: 200px 0;
-    background-image: linear-gradient(to bottom, var(--color-dg-black) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+    padding: 200px 60px;
+    background-image: linear-gradient(to bottom, var(--color-dg-black) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .main_home .main_home_content h1 {
@@ -93,8 +92,8 @@
 
 /*MAIN VIDEO GAMES*/
 .main_videogames {
-    max-width: calc(1300px - 40px);
-    padding: 0 var(--area-normal);
+    max-width: calc(1300px - 60px);
+    padding: 0 var(--area-box);
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -185,15 +184,6 @@
     background-color: var(--color-dg-lightgray);
 }
 
-.main_players .main_players_content {
-    max-width: 1300px;
-    padding-bottom: var(--area-normal);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .main_players .main_players_header {
     flex-basis: 100%;
     margin: var(--area-box) 0;
@@ -205,32 +195,40 @@
     font-size: var(--font-large);
 }
 
-.main_players article {
-    flex-basis: calc(50% - var(--area-box));
-    margin: var(--area-normal) 0;
-    margin-bottom: var(--area-box);
-    background-color: var(--color-dg-black);
-    border-radius: var(--radius-normal);
-    padding: var(--area-normal);
+.main_players .main_players_content {
+    max-width: calc(1300px - calc(var(--area-box) * 4));
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.main_players article img {
-    flex-basis: 150px;
-    width: 150px;
+.main_players .main_players_content article {
+    background-color: #ccc;
+    border: var(--color-dg-blue) 1px solid;
+    display: flex;
+    flex-basis: calc(50% - var(--area-box));
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: var(--radius-normal);
+    margin-bottom: calc(var(--area-box) * 2);
+}
+
+.main_players .main_players_content article img {
+    width: 15%;
     padding: 3px;
-    background-color: #FFF;
+    background-color: var(--color-dg-blue);
     border-radius: var(--radius-round);
+    margin: var(--area-small);
 }
 
-.main_players article .profile {
-    flex-basis: calc(100% - 150px - var(--area-normal));
-    margin-left: var(--area-normal);
+.main_players .main_players_content article .profile {
+    flex-basis: calc(85% - var(--area-normal));
+    margin: var(--area-small) auto;
 }
 
 .main_players article .profile header h2 {
-    color: var(--color-dg-lightgray);
+    color: var(--color-dg-black);
     font-weight: var(--weight-bold);
     font-size: var(--font-medium);
     margin-bottom: var(--area-small);
@@ -244,7 +242,7 @@
 }
 
 .main_players article .profile > p {
-    color: var(--color-dg-lightgray);
+    color: var(--color-dg-black);
     font-weight: var(--weight-light);
     font-size: var(--font-normal);
 }
@@ -252,12 +250,11 @@
 /*MAIN FOOTER*/
 .main_footer {
     width: 100%;
-    /*background-color: var(--color-dg-black);*/
-    background-color: var(--color-dg-blue);
+    background-color: var(--color-dg-black);
 }
 
 .main_footer .main_footer_content {
-    max-width: 1300px;
+    max-width: calc(1300px - calc(var(--area-box) * 4));
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -282,18 +279,18 @@
 }
 
 .main_footer .main_footer_content article ul li {
-    margin-bottom: 5px;
+    margin-bottom: var(--area-small);
     list-style: none;
 }
 
-.main_footer .main_footer_content article ul li a{
+.main_footer .main_footer_content article ul li a {
     color: var(--color-dg-lightgray);
     font-size: var(--font-normal);
     font-weight: var(--weight-light);
     text-decoration: none;
 }
 
-.main_footer .main_footer_content article ul li a:hover{
+.main_footer .main_footer_content article ul li a:hover {
     text-decoration: underline;
 }
 
@@ -315,7 +312,7 @@
     font-weight: var(--weight-light);
 }
 
-.main_footer_rights{
+.main_footer_rights {
     width: 100%;
     text-align: center;
     padding: 20px 0;
